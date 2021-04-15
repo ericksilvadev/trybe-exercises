@@ -1,0 +1,32 @@
+body{
+    font-size: 16px;
+}
+
+h1{
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+.bg{
+    background: grey;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 100%;
+    text-decoration: transparent;
+}
+
+#amarelo{
+  background-color: yellow;
+}
+
+#vermelho{
+  background-color: red;
+}
+
+#marrom{
+  background-color: brown;
+}
