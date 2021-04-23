@@ -1,0 +1,32 @@
+div:hover{
+    border: solid black;
+}
+
+.primaria{
+    color: blue;
+}
+
+.secundaria{
+    color: purple;
+}
+
+.complementar{
+    color: orange;
+    font-size: 2em;
+}
+.escura{
+    color: darkblue;
+}
+
+.clara{
+    color: lightblue;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.impar{
+    font-style: italic;
+}
