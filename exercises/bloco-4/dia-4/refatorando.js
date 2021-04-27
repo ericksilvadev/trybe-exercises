@@ -24,3 +24,15 @@ comparacao(1, 3);
 
 //ex3
 
+let carro = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  }
+let valores = [];
+
+for (let i in carro) {
+    valores.push(i + ': ' + carro[i])
+}
+
+console.log(valores);
