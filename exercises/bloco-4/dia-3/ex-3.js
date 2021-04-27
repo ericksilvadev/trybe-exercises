@@ -10,13 +10,13 @@ if (n > 1){
       if (index2 < coluna){
         square += space;
       } else{
-        square += asterisco
-      }
-    }
+        square += asterisco;
+      };
+    };
   console.log(square);
-  coluna -= 1
+  coluna -= 1;
   square = "";
-  }
+  };
 } else {
   console.log('insira um nuúmero maior que 1');
-}
+};
