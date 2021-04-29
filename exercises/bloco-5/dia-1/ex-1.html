@@ -39,7 +39,7 @@
       </div>
     </div>
     <script>
-        let paragraph = document.getElementsByTagName('p')[0];
+        let paragraph = document.getElementsByTagName('p')[1];
         paragraph.innerText = 'Mussum Ipsum, cacilds vidis litro abertis. In elementis mé pra quem é amistosis quis leo. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Interagi no mé, cursus quis, vehicula ac nisi. Per aumento de cachacis, eu reclamis.';
 
         let yellow = document.getElementsByClassName('main-content')[0];
@@ -47,7 +47,17 @@
 
         document.querySelector('.center-content').style.backgroundColor = 'white';
 
-        document.querySelector('.title').innerText = 'Exercício 5.1 '
+        document.querySelector('.title').innerText = 'Exercício 5.1 - JavaScript';
+
+        paragraph.innerHTML = paragraph.innerHTML.toUpperCase()
+
+        let paragraphs = document.querySelectorAll('p');
+
+        function logP (p) {
+            for (index = 0; index < p.length; index += 1) {
+                console.log(p);
+            }
+        }
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
