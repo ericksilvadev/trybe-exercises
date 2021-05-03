@@ -1,4 +1,13 @@
-<div id="paiDoPai">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="paiDoPai">
     <div id="pai">
       <div id="primeiroFilho"></div>
       <div id="elementoOndeVoceEsta">
@@ -9,4 +18,30 @@
       <div id="terceiroFilho"></div>
       <div id="quartoEUltimoFilho"></div>
     </div>
+    <script>
+      let pai = document.getElementById('pai')
+      let sibling = document.createElement("div");
+      sibling.className = 'irmaozin'
+      pai.appendChild(sibling);
+      // let estou = document.getElementById.('elementoOndeVoceEsta')
+      let meuFilho = document.createElement("div");
+      meuFilho.className = 'meu-filho';
+      document.getElementById('elementoOndeVoceEsta').appendChild(meuFilho);
+      let bisneto = document.createElement('div');
+      bisneto.className = 'bisneto';
+      document.getElementById('primeiroFilhoDoFilho').appendChild(bisneto);
+      
+      //---------------
+
+      let paiDoPai = pai.parentElement;
+      let divs = paiDoPai.querySelectorAll('div');
+      for(index = 0; index < divs.length; index += 1) {
+        if (divs[index].id != 'pai' && divs[index].id != 'elementoOndeVoceEsta' && divs[index].id != "primeiroFilhoDoFilho") {
+          divs[index].parentElement.removeChild(divs[index]);
+          console.log(divs[index]);
+        }
+      }
+    </script>
   </div>
+</body>
+</html>

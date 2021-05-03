@@ -4,9 +4,31 @@ const divTres = document.getElementById('divTres');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('mySpotrybefy');
 
-function addTech() {
-  
+// 1
+
+function addTech(element) {
+  element.className = 'tech';
+  return element;
 }
+
+//2
+
+function redirect() {
+  window.open("https://ericksilvadev.github.io/", '_blank');
+}
+
+myWebpage.addEventListener('dblclick', redirect);
+
+//3
+
+myWebpage.addEventListener('mouseover', function () {
+  myWebpage.style.color = '#2fc18c';
+});
+myWebpage.addEventListener('mouseout', function () {
+  myWebpage.style.color = 'white';
+});
+
+
 
 /*
  Copie esse arquivo e edite apenas ele;
