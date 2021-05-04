@@ -94,40 +94,54 @@ btnFriday.addEventListener('click', function () {
 
 // 6
 
-let days = document.getElementById('days')
-days.style.backgroundColor = '#eee'
+let days = document.getElementById('days');
 
 function zoom(event) {
-  event.target.style.fontSize = '25px'
-  // event.target.style.backgroundColor = '#666'
-  event.target.style.color = 'tomato'
-  event.target.style.cursor = 'default'
-
+  event.target.style.fontSize = '25px';
+  // event.target.style.backgroundColor = '#666';
+  event.target.style.color = 'tomato';
+  event.target.style.cursor = 'default';
 }
 
 function zoomOut(event) {
-  event.target.style.fontSize = '20px'
-  // event.target.style.backgroundColor = '#eee'
-  event.target.style.color = '#777'
+  event.target.style.fontSize = '20px';
+  // event.target.style.backgroundColor = '#eee';
+  event.target.style.color = '#777';
 }
-days.addEventListener('mouseover', zoom)
-days.addEventListener('mouseout', zoomOut)
-
-console.log(days);
+days.addEventListener('mouseover', zoom);
+days.addEventListener('mouseout', zoomOut);
 
 // 7
 
+let myTasks = document.querySelector('.my-tasks');
 
-function tasks() {
-  let task = document.getElementById('task-input').value;
-  taskSpan = document.createElement('span');
-  myTasks = document.querySelector('.my-tasks');
+function tasks(task) {
+  let taskSpan = document.createElement('span');
   myTasks.appendChild(taskSpan);
-  taskSpan.innerHTML = task + '</br>';
-  console.log(myTasks, task);
+  taskSpan.innerHTML = task;
+};
+
+tasks('Fazer 57 flexões');
+
+// 8
+
+function colorTask(color) {
+  let divTask = document.createElement('div');
+  divTask.classList.add('task');
+  myTasks.appendChild(divTask);
+  divTask.style.backgroundColor = color;
 }
 
-let btnAdd = document.getElementById('btn-add');
+colorTask('lightgreen');
 
-btnAdd.addEventListener('click', tasks)
+// 9 
 
+let divTask1 = document.getElementsByClassName('task')[0];
+
+divTask1.addEventListener('click', function () { 
+    if (divTask1.classList.contains('task-selected')){
+      divTask1.classList.remove('task-selected');
+    } else {
+      divTask1.classList.add('task-selected');
+    }
+});

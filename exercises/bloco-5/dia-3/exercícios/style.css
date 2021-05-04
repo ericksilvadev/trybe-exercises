@@ -31,7 +31,7 @@ button {
   color: #777;
   display: inline-block;
   font-size:20px;
-  margin: 5px 0;
+  margin-bottom: 40px;
   text-align: center;
   vertical-align: middle;
   width: 13.6%;
@@ -147,6 +147,7 @@ label {
   text-align: center;
   vertical-align: middle;
   width: 13.6%;
+  margin: 20px 0px;
 }
 
 .week-days {
