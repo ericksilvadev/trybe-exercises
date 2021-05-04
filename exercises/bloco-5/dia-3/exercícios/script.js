@@ -49,8 +49,6 @@ function holidaysBtn() {
 
 holidaysBtn();
 
-// 3
-
 let btnHoliday = document.getElementById('btn-holiday');
 
 btnHoliday.addEventListener('click', function () {
@@ -62,13 +60,11 @@ btnHoliday.addEventListener('click', function () {
       holidays[i].style.color = '#777';
     } else {
       holidays[i].classList.add('active-holiday');
-      holidays[i].style.backgroundColor = '#2fc18c';
+      holidays[i].style.backgroundColor = 'tomato';
       holidays[i].style.color = '#eee';
     }  
   }
 });
-
-// 4
 
 function fridayBtn() {
   let btnFriday = document.createElement('button');
@@ -79,8 +75,6 @@ function fridayBtn() {
 }
 
 fridayBtn();
-
-// 5 
   
 let btnFriday = document.getElementById('btn-friday')
 
