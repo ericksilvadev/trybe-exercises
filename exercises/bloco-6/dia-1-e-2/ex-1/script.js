@@ -1,3 +1,5 @@
+// import validation from "popup-validation/src/index.js";
+
 const nome = document.querySelector('.name');
 const email = document.querySelector('.email');
 const cpf = document.querySelector('.cpf');
@@ -12,6 +14,7 @@ const date = document.querySelector('.begin');
 const submitBtn = document.querySelector('.submit-btn');
 const body = document.getElementsByTagName('body')[0];
 const required = [nome, email, cpf, adress, city, state, resume, office, officeDescription, date];
+// validation.init();
 
 // criar opções de estados
 
@@ -25,7 +28,6 @@ function createStates(states) {
 
 createStates(['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernanbuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins']);
 
-// submitBtn.addEventListener('click', () => {
-//   const cv = document.createElement('div');
-//   cv.innerHTML = 
-// })
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+})
