@@ -1,0 +1,46 @@
+body {
+  background-color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #353535;
+}
+
+.header {
+  margin-bottom: 6vh;
+  font-size: 1.3em;
+}
+
+.field input, select, textarea {
+  margin: 5px;
+  background-color: #ffffff;
+  border: solid 1px #d8d8d8;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: .9em;
+  resize: none;
+  color: #353535;
+}
+
+.field input:focus, select:focus, textarea:focus {
+  outline: none;
+  border: solid 1px #b1b1b1;
+}
+
+.email {
+  width: 250px;
+}
+
+.text-input {
+  width: 60%;
+}
+
+.field {
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  background-color: #ffffffb9;
+  width: 70vw;
+  max-width: 1200px;
+  margin: 0 auto 5vh auto;
+  text-align: left;
+  padding: 2em;
+}
