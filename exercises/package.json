@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "popup-validation": "^3.0.3"
+    "just-validate": "^1.5.0"
   }
 }
