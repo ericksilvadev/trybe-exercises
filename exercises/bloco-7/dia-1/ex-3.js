@@ -10,6 +10,4 @@
 
 const fatorial = (n) => n === 0 ? 1 : (n * fatorial(n - 1));
 
-fatorial(4);
-
-console.log(fatorial(4));
+console.log(fatorial(3));
