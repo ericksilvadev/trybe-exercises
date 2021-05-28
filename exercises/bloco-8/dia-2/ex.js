@@ -153,10 +153,43 @@ const expectedResult2 = [
 ];
 
 function booksOrderedByReleaseYearDesc() {
-  books.sort((a, b) => b.releaseYear - a.releaseYear);
-  return books;
+  return books.sort((a, b) => b.releaseYear - a.releaseYear);
 }
 
-console.log(booksOrderedByReleaseYearDesc());
+// console.log(booksOrderedByReleaseYearDesc());
 
-assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult);
+assert.deepStrictEqual(booksOrderedByReleaseYearDesc(), expectedResult2);
+
+// ex 5
+
+const expectedResult3 = false;
+
+function everyoneWasBornOnSecXX() {
+  return books.every((book) => book.author.birthYear > 1901 && book.author.birthYear < 2000);
+}
+
+// console.log(everyoneWasBornOnSecXX());
+
+assert.strictEqual(everyoneWasBornOnSecXX(), expectedResult3);
+
+// ex 6
+
+const expectedResult4 = true;
+
+function someBookWasReleaseOnThe80s() {
+  return books.some((book) => book.releaseYear > 1980 && book.releaseYear < 1989);
+}
+
+// console.log(someBookWasReleaseOnThe80s());
+
+assert.strictEqual(someBookWasReleaseOnThe80s(), expectedResult4);
+
+// ex 7
+
+const expectedResult5 = false;
+
+function authorUnique() {
+  return 
+}
+
+assert.strictEqual(authorUnique(), expectedResult5);
