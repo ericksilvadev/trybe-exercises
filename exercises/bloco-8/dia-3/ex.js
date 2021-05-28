@@ -218,10 +218,10 @@ const expectedResult6 = [
 ];
 
 function oldBooks() {
-  return books.filter((book) => 2021 - book.releaseYear >= 60).sort((a, b) => a.releaseYear - b.releaseYear).map((book) => book.name).reverse();
+  return books.filter((book) => 2021 - book.releaseYear >= 60).map((book) => book.name);
 }
 
-// console.log(oldBooks());
+console.log(oldBooks());
 
 assert.deepStrictEqual(oldBooks(), expectedResult6);
 
@@ -233,6 +233,6 @@ function authorWith3DotsOnName() {
   return books.filter((book) => /^(\w.\s){3}\w+/.test(book.author.name))[0].name;
 }
 
-console.log(authorWith3DotsOnName());
+// console.log(authorWith3DotsOnName());
 
 assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult7);
